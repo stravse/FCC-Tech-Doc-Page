@@ -15,11 +15,24 @@ body{
     flex-direction: column;
     font-size: 1.125rem;
     font-family: Helvetica, sans-serif;
+    background-color: #e9f3de;
+}
+.doc-element h3,
+.doc-element h4,
+.doc-element h5,
+.main header{
+    color: #2e3a10;
+}
+.doc-element ul{
+    max-width: 40ch;
+    background-color: #dcedf1;
+    border-left: 4px solid #374e6b;
+    border-radius: 10px;
 }
 .main code{
     font-family: Calibri, serif;
     font-weight: 600;
-    background-color: #d3dee7;
+    background-color: #ebd8f1;
     border-radius: 5px;
     padding: 0 0.2rem;
 }
@@ -78,6 +91,9 @@ body{
     }
     .main-doc{
         margin-left: 12em;
+    }
+    .doc-element ul{
+        max-width: 80%;
     }
 
 }
