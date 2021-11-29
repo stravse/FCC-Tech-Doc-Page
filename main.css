@@ -17,6 +17,38 @@ body{
     font-family: Helvetica, sans-serif;
     background-color: #e9f3de;
 }
+.nav-bar{ 
+    max-height: 12em;
+    overflow-y: scroll;
+}
+.nav-bar ul{
+    padding: 0;
+}
+
+.nav-bar h1{
+    text-align: center;
+}
+.nav-bar a{
+    display: block;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+.nav-bar a:focus,
+.nav-bar a:hover{
+    transition: ease-in 400ms;
+    background-color: #47a12b;
+    color: #e5f5d0;
+}
+.nav-bar li{
+    width: 100%;
+    color: #3b3a3a;
+    border-top: 2px solid rgba(104, 116, 128, 0.63);
+}
+.nav-link{
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    font-family: Helvetica, monospace;
+}
 .doc-element h3,
 .doc-element h4,
 .doc-element h5,
@@ -41,39 +73,19 @@ body{
 }
 .main-doc .doc-element{
     padding-left: 2em;
-    
 }
 .main-doc .doc-element li,
 .main-doc .doc-element p{
     color: #3b3a3a;
 }
-
-.nav-bar{ 
-    max-height: 12em;
-    overflow-y: scroll;
-}
-.nav-bar ul{
-    padding: 0;
-}
-
-.nav-bar h1{
-    text-align: center;
-}
-.nav-bar a{
-    display: block;
+.doc-element a{
     text-decoration: none;
-    color: var(--dark-color);
+    color: #2d7e15;
 }
-.nav-bar li{
-    width: 100%;
-    color: #3b3a3a;
-    border-top: 2px solid rgba(104, 116, 128, 0.63);
+.doc-element a:hover{
+    text-decoration: underline;
 }
-.nav-link{
-    padding: 0.7em 1.2em;
-    cursor: pointer;
-    font-family: Helvetica, monospace;
-}
+
 
 @media (min-width: 900px){
     .main{
