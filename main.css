@@ -1,4 +1,68 @@
 
+:root{
+    --dark-color: #212122;
+    --green-color: #a5e229;
+}
 html{
     scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+.main-doc{
+    padding-left: 0.5em;
+}
+.main-doc article{
+    padding-left: 2em;
+}
+.nav-bar{
+    
+
+}
+.nav-bar ul{
+    padding: 0;
+}
+
+.nav-bar h1{
+    text-align: center;
+}
+.nav-bar a{
+    display: block;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+.nav-bar li{
+    width: 100%;
+    background-color: var(--green-color);
+    border-top: 1px solid;
+}
+.nav-btn{
+    padding: 1em 1.2em;
+    cursor: pointer;
+    font-family: Helvetica, monospace;
+}
+
+@media (min-width: 900px){
+    .main{
+        flex-direction: row;
+        font-size: 1.20rem;
+    }
+    .nav-bar{
+        min-width: 12em;
+        height: 100%;
+        position: fixed;
+        border-right: solid;
+        border-color: rgba(112, 128, 144, 0.486);
+    }
+    .main-doc{
+        margin-left: 12em;
+        
+    }
+
 }
