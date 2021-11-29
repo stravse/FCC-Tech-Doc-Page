@@ -13,17 +13,31 @@ body{
 .main{
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 1.125rem;
+    font-family: Helvetica, sans-serif;
+}
+.main code{
+    font-family: Calibri, serif;
+    font-weight: 600;
+    background-color: #d3dee7;
+    border-radius: 5px;
+    padding: 0 0.2rem;
 }
 .main-doc{
     padding-left: 0.5em;
 }
-.main-doc article{
+.main-doc .doc-element{
     padding-left: 2em;
-}
-.nav-bar{
     
+}
+.main-doc .doc-element li,
+.main-doc .doc-element p{
+    color: #3b3a3a;
+}
 
+.nav-bar{ 
+    max-height: 12em;
+    overflow-y: scroll;
 }
 .nav-bar ul{
     padding: 0;
@@ -39,11 +53,11 @@ body{
 }
 .nav-bar li{
     width: 100%;
-    background-color: var(--green-color);
-    border-top: 1px solid;
+    color: #3b3a3a;
+    border-top: 2px solid rgba(104, 116, 128, 0.63);
 }
-.nav-btn{
-    padding: 1em 1.2em;
+.nav-link{
+    padding: 0.7em 1.2em;
     cursor: pointer;
     font-family: Helvetica, monospace;
 }
@@ -56,13 +70,14 @@ body{
     .nav-bar{
         min-width: 12em;
         height: 100%;
+        max-height: 100%;
         position: fixed;
         border-right: solid;
         border-color: rgba(112, 128, 144, 0.486);
+        overflow-y: visible;
     }
     .main-doc{
         margin-left: 12em;
-        
     }
 
 }
